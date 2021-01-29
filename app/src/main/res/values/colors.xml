@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#24b7ff</color>
+    <color name="colorPrimaryDark">#2385f5</color>
+    <color name="colorAccent">#24b7ff</color>
+    
+    <color name="button_color">#24b7ff</color>
+    <color name="gradient_start_color">#24b5ff</color>
+    <color name="gradient_end_color">#2385f5</color>
+    <color name="semi_trans">#bb000000</color>
+    <color name="background_trans">#6F000000</color>
+    <color name="line_color">#d5d5d5</color>
+<!--    <color name="colorAccent_light">#1DAFE0</color>-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#D5D2D2</color>
+    <color name="facebook">#3b5998</color>
+    <color name="yellow">#fcd31f</color>
+
+    <color name="profile_bg_color">#eff1fe</color>
+    <color name="profile_txt_color">#6d696a</color>
+    <color name="profile_edit_color">#2284f3</color>
+
+    <color name="platinum_color">#a2abc8</color>
+    <color name="gold_color">#f6a90f</color>
+    <color name="silver_color">#8f8d8e</color>
+    <color name="bronze_color">#c77738</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="text_color_light">#b3b6c0</color>
+    <color name="text_color_dark">#565353</color>
+    <color name="baseball_drawable_solid">#efefef</color>
+    <color name="baseball_drawable_stroke">#d5d7d8</color>
+
+</resources>

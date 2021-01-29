@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/dpi_4"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/radio"
+        android:layout_width="15sp"
+        android:layout_height="15sp" />
+
+    <TextView
+        android:id="@+id/tvSkillTitle"
+        android:layout_marginLeft="10sp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+        android:text="Many historical payer head shots"
+        android:textColor="@color/text_color_dark"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
+

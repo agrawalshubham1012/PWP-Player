@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/gradient">
+        <ImageView
+            android:layout_marginLeft="@dimen/dpi_5"
+            android:id="@+id/backBtn"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dpi_14"
+            android:layout_width="@dimen/dpi_50"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:text="Messages"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/tvHeaderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dpi_50"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgFilter"
+            android:src="@drawable/filter"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dpi_12"
+            android:layout_width="@dimen/dpi_50"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CoachesList"
+        android:layout_above="@id/sendVideoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header" />
+
+    <LinearLayout
+        android:id="@+id/sendVideoLayout"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dpi_50">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send video again"
+            android:layout_gravity="center"
+            android:textSize="@dimen/spi_16"
+            android:textColor="@color/white"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

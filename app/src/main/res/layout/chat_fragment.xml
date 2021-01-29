@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/messages_menu"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgFilter"
+            android:src="@drawable/filter"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dpi_12"
+            android:layout_width="@dimen/dpi_50"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/messageTxt"
+        android:textSize="20sp"
+        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No data found.!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/CoachesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header" />
+
+</RelativeLayout>

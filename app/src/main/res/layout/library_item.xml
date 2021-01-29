@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="@dimen/dpi_5"
+        android:layout_marginBottom="@dimen/dpi_5"
+        android:layout_marginLeft="@dimen/dpi_8"
+        android:layout_marginRight="@dimen/dpi_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/dpi_4"
+        app:cardCornerRadius="@dimen/dpi_10">
+    <RelativeLayout
+        android:id="@+id/ViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+
+        <ImageView
+            android:id="@+id/imgVideo"
+            android:scaleType="centerCrop"
+            android:alpha="0.8"
+            android:src="@drawable/img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:background="@color/background_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/videoTitleTxt"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                android:text="Gym"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:src="@drawable/unfavorite_video"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/favoriteIcon"
+                android:layout_width="@dimen/dpi_45"
+                android:layout_height="@dimen/dpi_45"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dpi_10" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/play_2" />
+
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

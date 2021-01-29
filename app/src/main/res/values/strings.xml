@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">PwP Player</string>
+    <string name="server_client_id">884856159736-cq6mgsuu3dcads8ap0u37l93s99g7abl.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">2614849528731563</string>
+    <string name="fb_login_protocol_scheme">fb2614849528731563</string>
+    <string name="Base64EncodeInAppBilling">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwjVNyzwjb5HUtxeMeCN05DXo14FrQwol0f+Es9xaAeDKlJLhpkBWQw69IrLg+nN5blokv6kpW7WxWLcKmfAv5YLP7LWY9q77FeUhlGS4ti+pBrYK1xHlawRjF+f8NH3FjxS6+YiryJ1XrSk7mDjPNGBZeA4yCBmx6Yo9UXtqxqMZwUtRgTooQqq5Ls+Gju2SM2FsrrKzLtSZDyXfTsCIFD6vK8+FzyOmQ3I+x7iT9tmhBjrj1vCwv+Gvg1f+xJYUxaVpdtTYysETMEhH80rUP9+zf0Jolti7dPR24LE8CVbQOKNuIPhwOnIDi3zdMm5zGzOLTu+I1YWqdgLbZiT8EQIDAQAB</string>
+
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="whats_your_first_name">What is your first name?</string>
+    <string name="whats_your_last_name">What is your last name?</string>
+    <string name="whats_your_birthday">What is your date of birth?</string>
+    <string name="whats_your_position">What is your baseball positions?\nCheck all that apply.</string>
+
+    <string name="your_name">Enter your name</string>
+    <string name="last_name">Enter last name</string>
+    <string name="b_day">Enter your birthday</string>
+
+
+    <string name="f_1">Outfield</string>
+    <string name="f_2">Pitcher</string>
+    <string name="f_3">Catcher</string>
+    <string name="f_4">1 Base</string>
+    <string name="f_5">2 Base</string>
+    <string name="f_6">Sort stop</string>
+    <string name="f_7">Third base</string>
+
+
+    <!--  Sing In -->
+    <string name="sign_in_txt">Log-in or sign up with </string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="by_sign">By signing up you agree to the</string>
+    <string name="terms_condition"><u>Terms and conditions</u></string>
+
+
+    <!-- Menu -->
+    <string name="coaches_menu">Coaches</string>
+    <string name="library_menu">Library</string>
+    <string name="messages_menu">Messages</string>
+    <string name="favorite_menu">Favorite</string>
+    <string name="Profile_menu">Profile</string>
+
+
+    <!-- Header  -->
+    <string name="profile_header">Profile</string>
+    <string name="coaches_header">Coaches</string>
+    <string name="favorite_header">My Favorites</string>
+    <string name="library_header">Video Library</string>
+    <string name="setting_header">Settings</string>
+    <string name="videos_header">Videos</string>
+
+    <!-- Setting -->
+    <string name="setting_notification">Notification</string>
+    <string name="setting_account">Account</string>
+    <string name="setting_logout">Log out</string>
+
+    <!-- Summary  -->
+    <string name="accept_terms_condition">Accept all Terms and Conditions</string>
+
+    <!-- Coaches  -->
+    <string name="view_details">View Details</string>
+    <string name="submit_video">Submit Video</string>
+    <string name="view_video">View video</string>
+    <string name="pitchers">Pitchers</string>
+    <string name="settings">Setting</string>
+    <string name="contact_us">Contact us</string>
+    <string name="terms">Terms and Privacy Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Upload Video Scree -->
+    <string name="upload_video">Upload Video</string>
+    <string name="purchase_btn">Purchase</string>
+    <string name="upload_successfully_txt">Uploaded successfully</string>
+    <string name="expert_analysis_txt">Expert analysis from coach</string>
+    <string name="text_1">Send this coach a personalized video of the\nskill you want to get feedback on. Be sure to\nsend multiple angles for the coach to analyze.</string>
+<!--    <string name="text_2">Write any questions or comments related to the\nvideo you just uploaded here.</string>-->
+    <string name="text_2">Leave comments that will be attached to the video</string>
+    <string name="AreYouSure">Are you sure you want to logout?</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="submit">Submit</string>
+
+    <string name="upload_video_1">Send your coach a video of your technique to get feedback or ask questions.</string>
+    <string name="upload_video_2">get expert analysis of all technique and/or advice about your game.</string>
+
+    <string name="silver_coach_price">$29.99</string>
+    <string name="gold_coach_price">$59.99</string>
+    <string name="platinium_coach_price">$89.99</string>
+
+    <string name="base_1"> 1<sup>st</sup> Base</string>
+    <string name="base_2"> 2<sup><small>nd</small></sup> Base</string>
+    <string name="base_3"> 3<sup><small>rd</small></sup> Base</string>
+</resources>

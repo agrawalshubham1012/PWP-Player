@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/HeaderLayout"
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+        <TextView
+            android:text="@string/library_header"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/dpi_5"
+        android:layout_marginBottom="@dimen/dpi_5"
+        android:layout_below="@+id/HeaderLayout"
+        android:id="@+id/LibraryList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+    android:visibility="gone"
+    android:id="@+id/messageTxt"
+    android:textSize="20sp"
+    android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:text="No data found.!"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

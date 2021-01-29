@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".common_web_view.WebViewActivity">
+    <RelativeLayout
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/dpi_50"
+            android:layout_height="@dimen/dpi_50"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:padding="@dimen/dpi_15"/>
+
+        <TextView
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

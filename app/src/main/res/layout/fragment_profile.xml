@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/profile_bg_color">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:text="@string/profile_header"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:padding="@dimen/dpi_15">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_190"
+                    android:layout_marginTop="@dimen/dpi_80"
+                    android:background="@drawable/curve_profile">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/dpi_10"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/dpi_7"
+                        android:paddingRight="@dimen/dpi_7"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:layout_weight="1"
+                            android:gravity="left|center">
+
+                            <ImageView
+                                android:id="@+id/baseballPos1"
+                                android:layout_width="@dimen/dpi_30"
+                                android:layout_height="@dimen/dpi_30"
+                                android:layout_alignParentLeft="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/basball" />
+
+                            <TextView
+                                android:id="@+id/firstOne"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dpi_5"
+                                android:layout_toRightOf="@+id/baseballPos1"
+                                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textSize="@dimen/spi_14" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dpi_7"
+                            android:layout_marginRight="@dimen/dpi_7"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/baseballPos2"
+                                android:layout_width="@dimen/dpi_30"
+                                android:layout_height="@dimen/dpi_30"
+                                android:layout_alignParentLeft="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/basball" />
+
+                            <TextView
+                                android:id="@+id/secondOne"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dpi_5"
+                                android:layout_toRightOf="@+id/baseballPos2"
+                                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textSize="@dimen/spi_14" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:id="@+id/baseballPos3"
+                                android:layout_width="@dimen/dpi_30"
+                                android:layout_height="@dimen/dpi_30"
+                                android:layout_toLeftOf="@+id/lastOne"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/basball" />
+
+                            <TextView
+                                android:id="@+id/lastOne"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dpi_5"
+                                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textSize="@dimen/spi_14" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/settingsRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_50"
+                    android:layout_marginTop="@dimen/dpi_25"
+                    android:background="@drawable/curve_profile">
+
+
+                    <ImageView
+                        android:id="@+id/settingsImg"
+                        android:layout_width="@dimen/dpi_25"
+                        android:layout_height="@dimen/dpi_25"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dpi_5"
+                        android:layout_weight="2"
+                        android:src="@drawable/settings" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dpi_10"
+                        android:layout_toRightOf="@+id/settingsImg"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/settings"
+                        android:textColor="@color/profile_txt_color"
+                        android:textSize="@dimen/spi_15" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/contactUsRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_50"
+                    android:layout_marginTop="@dimen/dpi_25"
+                    android:background="@drawable/curve_profile">
+
+
+                    <ImageView
+                        android:id="@+id/contactUsImg"
+                        android:layout_width="@dimen/dpi_25"
+                        android:layout_height="@dimen/dpi_25"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dpi_5"
+                        android:layout_weight="2"
+                        android:src="@drawable/contact" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dpi_10"
+                        android:layout_toRightOf="@+id/contactUsImg"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/contact_us"
+                        android:textColor="@color/profile_txt_color"
+                        android:textSize="@dimen/spi_15" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/termsRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_50"
+                    android:layout_marginTop="@dimen/dpi_25"
+                    android:background="@drawable/curve_profile">
+
+
+                    <ImageView
+                        android:id="@+id/termsImg"
+                        android:layout_width="@dimen/dpi_25"
+                        android:layout_height="@dimen/dpi_25"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dpi_5"
+                        android:layout_weight="2"
+                        android:src="@drawable/terms" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dpi_10"
+                        android:layout_toRightOf="@+id/termsImg"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/terms"
+                        android:textColor="@color/profile_txt_color"
+                        android:textSize="@dimen/spi_15" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/privacyRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_50"
+                    android:layout_marginTop="@dimen/dpi_25"
+                    android:background="@drawable/curve_profile">
+
+                    <ImageView
+                        android:id="@+id/privacyImg"
+                        android:layout_width="@dimen/dpi_25"
+                        android:layout_height="@dimen/dpi_25"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dpi_5"
+                        android:layout_weight="2"
+                        android:src="@drawable/conditions" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dpi_10"
+                        android:layout_toRightOf="@+id/privacyImg"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                        android:gravity="center_vertical"
+                        android:text="@string/privacy_policy"
+                        android:textColor="@color/profile_txt_color"
+                        android:textSize="@dimen/spi_15" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/profileImgRl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImg"
+                        android:layout_width="@dimen/dpi_120"
+                        android:layout_height="@dimen/dpi_120"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dpi_15"
+                        android:background="@drawable/circle_profile_img"
+                        android:padding="@dimen/dpi_1"
+                        android:src="@drawable/baseball_img" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profileImgRl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dpi_5"
+                    android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dpi_15" />
+
+                <TextView
+                    android:id="@+id/profileAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profileName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dpi_2"
+                    android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                    android:text="Age 18"
+                    android:textColor="@color/text_color_light"
+                    android:textSize="@dimen/dpi_14" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/editImg"
+                            android:layout_width="@dimen/dpi_28"
+                            android:layout_height="@dimen/dpi_28"
+                            android:layout_marginLeft="@dimen/dpi_23"
+                            android:layout_marginTop="105sp"
+                            android:padding="@dimen/dpi_2"
+                            android:src="@drawable/edite_profile" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semi_trans"
+        android:id="@+id/picImageLayout">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/dpi_30"
+            app:cardCornerRadius="@dimen/dpi_10"
+            app:cardBackgroundColor="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/dpi_15"
+                    android:layout_marginBottom="@dimen/dpi_10"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                    android:textSize="@dimen/spi_14"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Select Option"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_1"
+                    android:layout_marginTop="@dimen/dpi_5"
+                    android:background="@color/line_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dpi_10"
+                    android:id="@+id/from_camera"
+                    android:layout_marginTop="@dimen/dpi_5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/dpi_30"
+                        android:layout_height="@dimen/dpi_30"
+                        android:src="@drawable/ic_menu_camera"
+                        android:layout_marginLeft="@dimen/dpi_10"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From Camera"
+                        android:textSize="@dimen/spi_12"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dpi_10"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_1"
+                    android:layout_marginTop="@dimen/dpi_5"
+                    android:background="@color/line_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dpi_5"
+                    android:padding="@dimen/dpi_10"
+                    android:id="@+id/from_gallery"
+                    android:layout_marginBottom="@dimen/dpi_5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/dpi_30"
+                        android:layout_height="@dimen/dpi_30"
+                        android:src="@drawable/gallery"
+                        android:padding="@dimen/dpi_2"
+                        android:layout_marginLeft="@dimen/dpi_10"/>
+                    <TextView
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From Gallery"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/spi_12"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/dpi_10"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dpi_45"
+                    android:text="CANCEL"
+                    android:id="@+id/cancelPopup"
+                    android:background="@color/colorAccent"
+                    android:textSize="@dimen/spi_12"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

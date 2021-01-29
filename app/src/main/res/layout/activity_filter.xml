@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FilterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/gradient">
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/dpi_50"
+            android:padding="@dimen/dpi_15"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/dpi_60"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo_pln_2" />
+
+        <TextView
+            android:id="@+id/textViewClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/dpi_10"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/platinumLayout"
+                android:paddingTop="@dimen/dpi_10"
+                android:paddingBottom="@dimen/dpi_10"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/dpi_15"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dpi_100"
+                        android:src="@drawable/platinum_trophy"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/dpi_5"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_16"
+                        android:textAllCaps="true"
+                        android:textColor="@color/platinum_color"
+                        android:textStyle="bold"
+                        android:text="PLATINUM"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/dpi_5"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+                    <TextView
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_16"
+                        android:textColor="@color/text_color_dark"
+                        android:text="Platinum"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dpi_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_13"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                        android:textColor="@color/text_color_dark"
+                        android:text="$89.00/\nvideo analysis"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/dpi_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_15"
+                        android:lineSpacingExtra="@dimen/dpi_5"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                        android:textColor="@color/text_color_dark"
+                        android:text="Highest level tier coach -\n$89.99 per analysis"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/dpi_10"
+                android:layout_marginRight="@dimen/dpi_10"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/gray"/>
+            <LinearLayout
+                android:id="@+id/goldLayout"
+                android:paddingTop="@dimen/dpi_10"
+                android:paddingBottom="@dimen/dpi_10"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="157dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dpi_15">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dpi_100"
+                        android:src="@drawable/gold_trophy" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dpi_5"
+                        android:gravity="center"
+                        android:text="GOLD"
+                        android:textAllCaps="true"
+                        android:textColor="@color/gold_color"
+                        android:textSize="@dimen/spi_16"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/dpi_5"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_16"
+                        android:textColor="@color/text_color_dark"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                        android:text="Gold"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dpi_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_13"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                        android:textColor="@color/text_color_dark"
+                        android:text="$59.00/\nvideo analysis"/>
+                    <TextView
+                        android:lineSpacingExtra="@dimen/dpi_5"
+                        android:layout_marginTop="@dimen/dpi_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_15"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                        android:textColor="@color/text_color_dark"
+                        android:text="Intermediate tier coach -\n$59.99 per analysis"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="@dimen/dpi_10"
+                android:layout_marginRight="@dimen/dpi_10"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/gray"/>
+            <LinearLayout
+                android:id="@+id/silverLayout"
+                android:paddingTop="@dimen/dpi_10"
+                android:paddingBottom="@dimen/dpi_10"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/dpi_15"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dpi_100"
+                        android:src="@drawable/silver_trophy"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/dpi_5"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_16"
+                        android:textAllCaps="true"
+                        android:textColor="@color/silver_color"
+                        android:textStyle="bold"
+                        android:text="SILVER"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="@dimen/dpi_5"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_16"
+                        android:textColor="@color/text_color_dark"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                        android:text="Silver"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dpi_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/spi_13"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                        android:textColor="@color/text_color_dark"
+                        android:text="$29.00/\nvideo analysis"/>
+                    <TextView
+                        android:layout_marginTop="@dimen/dpi_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/dpi_5"
+                        android:textSize="@dimen/spi_15"
+                        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                        android:textColor="@color/text_color_dark"
+                        android:text="Most affordable tier coach -\n$29.99 per analysis
+"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

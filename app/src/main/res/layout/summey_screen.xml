@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/headerTxt"
+        android:layout_above="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        <LinearLayout-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:src="@drawable/diamond"-->
+<!--                android:layout_width="25sp"-->
+<!--                android:layout_height="25sp"/>-->
+
+<!--            <TextView-->
+<!--                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:drawablePadding="10sp"-->
+<!--                android:text="Answer to this is to remove the audio from the video and convert that to a .ogg file which can be looped seamlessly and then use the video without audio to loop round and this works."-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="15sp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:src="@drawable/diamond"-->
+<!--                android:layout_width="25sp"-->
+<!--                android:layout_height="25sp"/>-->
+
+<!--            <TextView-->
+<!--                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:drawablePadding="10sp"-->
+<!--                android:text="Answer to this is to remove the audio from the video and convert that to a .ogg file which can be looped seamlessly and then use the video without audio to loop round and this works."-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="15sp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <ImageView-->
+<!--                android:src="@drawable/diamond"-->
+<!--                android:layout_width="25sp"-->
+<!--                android:layout_height="25sp"/>-->
+
+<!--            <TextView-->
+<!--                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:drawablePadding="10sp"-->
+<!--                android:text="Answer to this is to remove the audio from the video and convert that to a .ogg file which can be looped seamlessly and then use the video without audio to loop round and this works."-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Terms and Condition"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50sp" />
+
+
+    <CheckBox
+        android:layout_marginTop="@dimen/dpi_10"
+        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+        android:buttonTint="@color/colorPrimary"
+        android:id="@+id/checkBox"
+        android:textStyle="normal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:text="@string/accept_terms_condition"
+        android:layout_marginBottom="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/nextBtn"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+        android:textSize="22sp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/button_color"
+        android:layout_width="match_parent"
+        android:layout_height="50sp" />
+
+</RelativeLayout>

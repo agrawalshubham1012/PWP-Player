@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tab_library.VideoListActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/HeaderLayout"
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/dpi_50"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dpi_14"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/TitleTxt"
+            android:text="@string/library_header"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/messageTxt"
+        android:textSize="20sp"
+        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No data found.!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/dpi_5"
+        android:layout_marginBottom="@dimen/dpi_5"
+        android:layout_below="@+id/HeaderLayout"
+        android:id="@+id/LibraryList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

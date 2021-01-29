@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "884856159736",
+    "firebase_url": "https://playercoach-d6a7b.firebaseio.com",
+    "project_id": "playercoach-d6a7b",
+    "storage_bucket": "playercoach-d6a7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884856159736:android:d0f458cb0b9c3a3df06a0d",
+        "android_client_info": {
+          "package_name": "com.player.coachesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884856159736-e2kqk6va348lqjs9olrv3jap15a2b4tn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtMgU-adIlBH4KxOZNO0s-gw_yUQcvG1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884856159736-e2kqk6va348lqjs9olrv3jap15a2b4tn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

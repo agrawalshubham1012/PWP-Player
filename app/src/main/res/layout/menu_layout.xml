@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/coaches"
+        android:layout_width="@dimen/dpi_40"
+        android:layout_height="@dimen/dpi_40"/>
+
+    <TextView
+        android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+        android:textSize="@dimen/dpi_14"
+        android:text="Coaches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

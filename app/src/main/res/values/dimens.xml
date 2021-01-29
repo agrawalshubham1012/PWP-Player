@@ -1,0 +1,102 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="usage_item_border_width">1dp</dimen>
+
+    <dimen name="dpi_1">1dp</dimen>
+    <dimen name="dpi_2">2dp</dimen>
+    <dimen name="dpi_3">3dp</dimen>
+    <dimen name="dpi_4">4dp</dimen>
+    <dimen name="dpi_5">5dp</dimen>
+    <dimen name="dpi_6">6dp</dimen>
+    <dimen name="dpi_7">7dp</dimen>
+    <dimen name="dpi_8">8dp</dimen>
+    <dimen name="dpi_9">9dp</dimen>
+    <dimen name="dpi_10">10dp</dimen>
+    <dimen name="dpi_11">11dp</dimen>
+    <dimen name="dpi_12">12dp</dimen>
+    <dimen name="dpi_13">13dp</dimen>
+    <dimen name="dpi_14">14dp</dimen>
+    <dimen name="dpi_15">15dp</dimen>
+    <dimen name="dpi_16">16dp</dimen>
+    <dimen name="dpi_17">17dp</dimen>
+    <dimen name="dpi_18">18dp</dimen>
+    <dimen name="dpi_19">19dp</dimen>
+    <dimen name="dpi_20">20dp</dimen>
+    <dimen name="dpi_21">21dp</dimen>
+    <dimen name="dpi_22">22dp</dimen>
+    <dimen name="dpi_23">23dp</dimen>
+    <dimen name="dpi_24">24dp</dimen>
+    <dimen name="dpi_25">25dp</dimen>
+    <dimen name="dpi_26">26dp</dimen>
+    <dimen name="dpi_27">27dp</dimen>
+    <dimen name="dpi_28">28dp</dimen>
+    <dimen name="dpi_29">29dp</dimen>
+    <dimen name="dpi_30">30dp</dimen>
+
+    <dimen name="dpi_35">35dp</dimen>
+    <dimen name="dpi_40">40dp</dimen>
+    <dimen name="dpi_48">48dp</dimen>
+    <dimen name="dpi_50">50dp</dimen>
+    <dimen name="dpi_55">55dp</dimen>
+    <dimen name="dpi_60">60dp</dimen>
+    <dimen name="dpi_65">65dp</dimen>
+    <dimen name="dpi_70">70dp</dimen>
+    <dimen name="dpi_78">78dp</dimen>
+    <dimen name="dpi_79">79dp</dimen>
+
+    <dimen name="dpi_80">80dp</dimen>
+    <dimen name="dpi_81">81dp</dimen>
+    <dimen name="dpi_82">82dp</dimen>
+    <dimen name="dpi_83">83dp</dimen>
+    <dimen name="dpi_84">84dp</dimen>
+    <dimen name="dpi_85">85dp</dimen>
+    <dimen name="dpi_90">90dp</dimen>
+
+    <dimen name="dpi_100">100dp</dimen>
+    <dimen name="dpi_110">110dp</dimen>
+    <dimen name="dpi_120">120dp</dimen>
+    <dimen name="dpi_130">130dp</dimen>
+    <dimen name="dpi_150">150dp</dimen>
+    <dimen name="dpi_160">160dp</dimen>
+    <dimen name="dpi_170">170dp</dimen>
+    <dimen name="dpi_180">180dp</dimen>
+    <dimen name="dpi_190">190dp</dimen>
+    <dimen name="dpi_200">200dp</dimen>
+    <dimen name="dpi_300">300dp</dimen>
+    <dimen name="dpi_400">400dp</dimen>
+    <dimen name="dpi_500">500dp</dimen>
+
+    <!-- String Size -->
+    <dimen name="spi_1">1sp</dimen>
+    <dimen name="spi_2">2sp</dimen>
+    <dimen name="spi_3">3sp</dimen>
+    <dimen name="spi_4">4sp</dimen>
+    <dimen name="spi_5">5sp</dimen>
+    <dimen name="spi_6">6sp</dimen>
+    <dimen name="spi_7">7sp</dimen>
+    <dimen name="spi_8">8sp</dimen>
+    <dimen name="spi_9">9sp</dimen>
+    <dimen name="spi_10">10sp</dimen>
+    <dimen name="spi_11">11sp</dimen>
+    <dimen name="spi_12">12sp</dimen>
+    <dimen name="spi_13">13sp</dimen>
+    <dimen name="spi_14">14sp</dimen>
+    <dimen name="spi_15">15sp</dimen>
+    <dimen name="spi_16">16sp</dimen>
+    <dimen name="spi_17">17sp</dimen>
+    <dimen name="spi_18">18sp</dimen>
+    <dimen name="spi_19">19sp</dimen>
+    <dimen name="spi_20">20sp</dimen>
+
+    <dimen name="spi_30">30sp</dimen>
+    <dimen name="spi_35">35sp</dimen>
+    <dimen name="spi_40">40sp</dimen>
+    <dimen name="spi_50">50sp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="image_size">55dp</dimen>
+    <dimen name="video_view_height">44dp</dimen>
+    <dimen name="dpi_45">45dp</dimen>
+
+</resources>

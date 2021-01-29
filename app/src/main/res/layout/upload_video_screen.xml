@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/HeaderMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:id="@+id/backBtnMenu"
+            android:layout_width="@dimen/dpi_50"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dpi_15"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:layout_width="@dimen/dpi_60"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo_pln_2" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/HeaderMenu"
+        android:orientation="vertical">
+
+
+        <com.kofigyan.stateprogressbar.StateProgressBar
+            android:id="@+id/stateBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            app:spb_animateToCurrentProgressState="true"
+            app:spb_checkStateCompleted="true"
+            app:spb_currentStateDescriptionColor="@color/colorPrimaryDark"
+            app:spb_maxStateNumber="three"
+            app:spb_stateBackgroundColor="#D5D2D2"
+            app:spb_stateDescriptionColor="#D5D2D2"
+            app:spb_stateForegroundColor="@color/colorPrimaryDark"
+            app:spb_stateNumberBackgroundColor="#808080"
+            app:spb_stateSize="30dp"
+            app:spb_stateNumberForegroundColor="#eeeeee" />
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/LayoutOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/upload_video_1"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:padding="@dimen/dpi_3"
+                android:id="@+id/uploadedBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="50sp"
+                android:layout_marginRight="50sp"
+                android:background="@drawable/curve_view_details"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                android:gravity="center"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="@string/upload_video"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb"/>
+
+            <TextView
+                android:id="@+id/successTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/upload_successfully_txt"
+                android:textColor="@color/text_color_dark"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/text_2"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:padding="10sp"
+                android:id="@+id/commentExt"
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="50sp"
+                android:background="@drawable/uploaded_video_borded"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                android:gravity="top|left"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LayoutThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tvPriceConfirmText"
+                android:layout_marginLeft="@dimen/dpi_50"
+                android:layout_marginRight="@dimen/dpi_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                android:lineSpacingExtra="5sp"
+                android:text="@string/expert_analysis_txt"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/priceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+                android:lineSpacingExtra="10sp"
+                android:text="$149.00"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvCoachName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coach Name"
+                android:textStyle="bold"
+                android:textSize="@dimen/dpi_20"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/dpi_20"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_marginVertical="@dimen/dpi_5"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgCoachProfile"
+                    android:layout_width="@dimen/dpi_90"
+                    android:layout_height="@dimen/dpi_90"
+                    android:src="@drawable/baseball_img"/>
+                <RelativeLayout
+                    android:background="@drawable/circle_profile_img"
+                    android:layout_marginLeft="@dimen/dpi_25"
+                    android:layout_width="@dimen/dpi_70"
+                    android:layout_height="@dimen/dpi_70">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgTrophy"
+                        android:padding="@dimen/dpi_8"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/silver_trophy"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvPriceString"
+                android:layout_marginTop="@dimen/dpi_20"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontsfree_net_sf_pro_rounded_regular"
+                android:lineSpacingExtra="10sp"
+                android:text="@string/upload_video_2"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/HeaderMenu"
+        android:layout_marginTop="@dimen/dpi_10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+
+        <TextView
+            android:textSize="@dimen/spi_16"
+            android:paddingLeft="@dimen/dpi_30"
+            android:id="@+id/backBtn"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="start|bottom"
+            android:layout_weight="1"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/nextBtn"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/next"
+            android:gravity="end|bottom"
+            android:paddingRight="@dimen/dpi_30"
+            android:layout_weight="1"
+            android:textSize="@dimen/spi_16"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_color"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/purchseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/button_color"
+            android:fontFamily="@font/fontsfree_net_sf_pro_rounded_bold"
+            android:gravity="center"
+            android:text="@string/purchase_btn"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/layout_upload_video_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semi_trans"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dpi_20"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/dpi_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dpi_30"
+                        android:text="Upload Video"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/spi_15"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dpi_40"
+                        android:layout_height="@dimen/dpi_2"
+                        android:layout_gravity="center"
+                        android:layout_marginVertical="@dimen/dpi_10"
+                        android:background="@color/colorAccent" />
+
+                    <TextView
+                        android:layout_marginHorizontal="@dimen/dpi_10"
+                        android:layout_marginTop="@dimen/dpi_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:text="Video has been uploaded successfully."
+                        android:textColor="@color/text_color_dark"
+                        android:textSize="12sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dpi_12"
+                        android:layout_marginBottom="@dimen/dpi_30"
+                        app:cardBackgroundColor="@color/colorAccent"
+                        app:cardCornerRadius="@dimen/dpi_5">
+
+                        <TextView
+                            android:id="@+id/okayBtnUploadVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/dpi_20"
+                            android:paddingVertical="@dimen/dpi_7"
+                            android:text="OK"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/spi_12" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
